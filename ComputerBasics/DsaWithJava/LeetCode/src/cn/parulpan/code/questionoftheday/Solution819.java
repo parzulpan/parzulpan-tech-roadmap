@@ -2,11 +2,15 @@ package cn.parulpan.code.questionoftheday;
 
 import cn.parulpan.code.utils.LcUtils;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Set;
 
 /**
  * 819.最常见的单词
  * https://leetcode-cn.com/problems/most-common-word/
+ * <p>
+ * data structure: HashMap String
+ * algorithm: Counting
  *
  * @author parzulpan
  * @since 2022/4/17
@@ -22,7 +26,7 @@ public class Solution819 {
 //        String paragraph = "Bob. hIt, baLl";
 //        String[] banned = {"bob", "hit"};
 
-        String paragraph ="a, a, a, a, b,b,b,c, c";
+        String paragraph = "a, a, a, a, b,b,b,c, c";
         String[] banned = {"a"};
 
         String result = mostCommonWord(paragraph, banned);
@@ -43,11 +47,11 @@ public class Solution819 {
         String result = "";
         StringBuilder sb = new StringBuilder();
 
-        for (int i = 0 ; i <= length; ++i) {
+        for (int i = 0; i <= length; ++i) {
             // 最后一个单词要比较
             if (i < length && Character.isLetter(paragraph.charAt(i))) {
                 sb.append(Character.toLowerCase(paragraph.charAt(i)));
-            } else if (sb.length() > 0){
+            } else if (sb.length() > 0) {
                 String word = sb.toString();
                 if (!set.contains(word)) {
                     int count = map.getOrDefault(word, 0) + 1;
