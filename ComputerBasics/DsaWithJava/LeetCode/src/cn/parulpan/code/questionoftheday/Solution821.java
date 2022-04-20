@@ -3,7 +3,7 @@ package cn.parulpan.code.questionoftheday;
 import java.util.Arrays;
 
 /**
- * 821. 字符的最短距离
+ * 821.字符的最短距离
  * https://leetcode-cn.com/problems/shortest-distance-to-a-character/
  * <p>
  * data structure: Array, String

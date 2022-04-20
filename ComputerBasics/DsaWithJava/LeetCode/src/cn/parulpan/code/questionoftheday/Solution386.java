@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 386. 字典序排数
+ * 386.字典序排数
  * https://leetcode-cn.com/problems/lexicographical-numbers/
  * <p>
  * data structure: Trie

@@ -51,7 +51,23 @@
 
 ### SQL
 
+* 选择
+* 排序、修改
+* 字符串处理函数、正则
+* 组合查询、指定选取
+* 合并
+* 计算函数
+* 控制流
+* 过滤
+
 ### 每日一题
+
+* [2022/04/17 819.最常见的单词](https://github.com/parzulpan/parzulpan-tech-roadmap/blob/main/ComputerBasics/DsaWithJava/LeetCode/src/cn/parulpan/code/questionoftheday/Solution819.java)
+* [2022/04/18 386.字典序排数](https://github.com/parzulpan/parzulpan-tech-roadmap/blob/main/ComputerBasics/DsaWithJava/LeetCode/src/cn/parulpan/code/questionoftheday/Solution386.java)
+* [2022/04/19 821.字符的最短距离](https://github.com/parzulpan/parzulpan-tech-roadmap/blob/main/ComputerBasics/DsaWithJava/LeetCode/src/cn/parulpan/code/questionoftheday/Solution821.java)
+* [2022/04/20 388.文件的最长绝对路径](https://github.com/parzulpan/parzulpan-tech-roadmap/blob/main/ComputerBasics/DsaWithJava/LeetCode/src/cn/parulpan/code/questionoftheday/Solution388.java)
+
+
 
 
 
