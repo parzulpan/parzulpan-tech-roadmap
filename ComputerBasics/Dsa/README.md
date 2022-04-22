@@ -31,8 +31,8 @@
 ### 数据结构
 
 * 数组
-  * [217. 存在重复元素](https://github.com/parzulpan/parzulpan-tech-roadmap/blob/main/ComputerBasics/DsaWithJava/LeetCode/src/cn/parulpan/code/datastructure/Solution217.java)
-  * [53. 最大子数组和](https://github.com/parzulpan/parzulpan-tech-roadmap/blob/main/ComputerBasics/DsaWithJava/LeetCode/src/cn/parulpan/code/datastructure/Solution53.java)
+  * [217. 存在重复元素](LeetCode/src/cn/parulpan/code/datastructure/Solution217.java)
+  * [53. 最大子数组和](LeetCode/src/cn/parulpan/code/datastructure/Solution53.java)
 * 字符串
 * 链表
 * 栈、队列
@@ -41,7 +41,7 @@
 ### 算法
 
 * 二分查找
-  * [704. 二分查找](https://github.com/parzulpan/parzulpan-tech-roadmap/blob/main/ComputerBasics/DsaWithJava/LeetCode/src/cn/parulpan/code/algorithm/Solution704.java)
+  * [704. 二分查找](LeetCode/src/cn/parulpan/code/algorithm/Solution704.java)
 * 双指针
 * 滑动窗口
 * 广度、深度优先搜索
@@ -62,15 +62,8 @@
 
 ### 每日一题
 
-* [2022/04/17 819.最常见的单词](https://github.com/parzulpan/parzulpan-tech-roadmap/blob/main/ComputerBasics/DsaWithJava/LeetCode/src/cn/parulpan/code/questionoftheday/Solution819.java)
-* [2022/04/18 386.字典序排数](https://github.com/parzulpan/parzulpan-tech-roadmap/blob/main/ComputerBasics/DsaWithJava/LeetCode/src/cn/parulpan/code/questionoftheday/Solution386.java)
-* [2022/04/19 821.字符的最短距离](https://github.com/parzulpan/parzulpan-tech-roadmap/blob/main/ComputerBasics/DsaWithJava/LeetCode/src/cn/parulpan/code/questionoftheday/Solution821.java)
-* [2022/04/20 388.文件的最长绝对路径](https://github.com/parzulpan/parzulpan-tech-roadmap/blob/main/ComputerBasics/DsaWithJava/LeetCode/src/cn/parulpan/code/questionoftheday/Solution388.java)
-
-
-
-
-
-
-
+* [2022/04/17 819.最常见的单词](LeetCode/src/cn/parulpan/code/questionoftheday/Solution819.java)
+* [2022/04/18 386.字典序排数](LeetCode/src/cn/parulpan/code/questionoftheday/Solution386.java)
+* [2022/04/19 821.字符的最短距离](LeetCode/src/cn/parulpan/code/questionoftheday/Solution821.java)
+* [2022/04/20 388.文件的最长绝对路径](LeetCode/src/cn/parulpan/code/questionoftheday/Solution388.java)
 

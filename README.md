@@ -9,10 +9,10 @@
 **目录：**
 * 计算机科学导论
 * 算法导论
-* [数据结构和算法分析(Java 语言描述)](ComputerBasics/DsaWithJava/README.md)
+* [数据结构和算法分析](ComputerBasics/Dsa/README.md)
 * 深入理解计算机系统
 * 现代操作系统
-* 计算机网络(自顶向下方法)
+* [计算机网络](ComputerBasics/Network/README.md)
 * 计算机组成原理
 * 编译原理
 * 软件工程
@@ -25,6 +25,8 @@
 ## 前端开发
 
 [详情移步](https://blog.parzulpan.cn/archives/xue-xi-lu-xian-qian-duan-pian)
+
+
 
 ## 后端开发
 
