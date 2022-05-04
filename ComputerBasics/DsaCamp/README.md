@@ -102,7 +102,129 @@
 
 ## 2.前期准备和复杂度分析
 
+### 一些准备
+
+* 电脑设置
+  * Google
+  * Terminal
+  * VSCode
+  * IntelliJ
+* Code Style
+  * Google Code Style
+  * Alibaba Code Style
+  * Airbnb Code Style
+* LeetCode
+  * leetcode-cn.com **题解**
+  * leetcode.com **Discuss most vote**
+* 指法和小操作
+  * 快速到行头行尾
+  * 选单词、选整行、先整列
+  * IDE 的自动补全
+  * Top tips for xx
+* 自顶向下的编程方式
+  * [clean-code](https://markhneedham.com/blog/2008/09/15/clean-code-book-review/)
+  * [YesLeetCode 125.验证回文串](DsaCamp/src/cn/parulpan/code/chapter02/Solution125.java)
+
+### 时间空间复杂度
+
+* **Big O Natation**
+  * **O(1)** Constant Complexity 常数复杂度
+  
+    ```java
+    int n = 1000;
+    System.out.println("Hey - your input is: " + n);
+    ```
+
+  * **O(logn)** Logarithmic Complexity 对数复杂度
+
+    ```java
+    for (int i = 1; i < n; i = i * 2) {
+        System.out.println("Hey - I'm busy looking at: " + i); 
+    }
+    ```
+
+  * **O(n)** Linear Complexity 线性时间复杂度
+
+    ```java
+    for (int i = 1; i <= n; i++) {
+        System.out.println("Hey - I'm busy looking at: " + i);
+    }
+    ```
+
+  * **O(n^2)** N square Complexity 平⽅
+
+    ```java
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <=n; j++) {
+            System.out.println("Hey - I'm busy looking at: " + i + " and " + 
+            j);
+        } 
+    }
+    ```
+
+  * **O(n^3)** N square Complexity ⽴⽅
+
+    ```java
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <=n; j++) {
+            for (int k = 1; k <=n; k++) {
+                System.out.println("Hey - I'm busy looking at: " + i + "and" + j);
+            }
+        } 
+    }
+    ```
+
+  * **O(2^n)** Exponential Growth 指数
+  * **O(n!)** Factorial 阶乘
+* **Master Theorem**
+  * **O(logn)** Binary Search
+  * **O(n)** Binary Tree Traversal
+  * **O(n)** Optimal Sorted Matrix Search
+  * **O(nlogn)** Merge Sort
+
 ## 3.数组、链表、跳表
+
+### 数组、链表、跳表的基本实现和特性
+
+#### 数组
+
+#### 链表
+
+链表是一种物理存储单元上非连续、非顺序的存储结构。链表由一序列的结点（链表中的每一个元素成为结点）组成。
+
+* 链表结点的数据结构 [LinkedListNode](DsaCamp/src/cn/parulpan/code/common/LinkedListNode.java)
+
+**单链表**，是链表的一种，它有多个结点组成，每个结点都由一个数据域和一个指针组成，数据域用来存储数据，指针域用来指向其后结点。单链表的头结点的数据域不存储数据，指针域指向第一个真正存储数据的结点。
+
+* 单链表的实现 [SingleLinkedList](DsaCamp/src/cn/parulpan/code/common/SingleLinkedList.java)
+* [YesLeetCode 206.反转链表](DsaCamp/src/cn/parulpan/code/chapter03/Solution206.java)
+* [YesLeetCode 92.反转链表 II](DsaCamp/src/cn/parulpan/code/chapter03/Solution92.java)
+
+链表在工程中的应用：
+
+* LRU Cache
+
+#### 跳表
+
+复杂度分析：
+
+* 跳表查询的时间复杂度分析
+  1. 由 n/2、n/4、n/8，则第 k 级索引结点的个数就是 **n/(2^k)**
+  2. 假设索引有 h 级，最高级的索引有 2 个结点。n/(2^h) = 2，从而求得 **h =
+log2(n)-1**
+  3. 那么跳表的高度就是 **logn**，且每层索引遍历的结点个数为 3，所以在跳表中查询任意数据的时间复杂度就是 **O(logn)**
+* 跳表查询的时间复杂度分析
+  1. 原始链表大小为 n，每 2 个结点抽 1 个，每层索引的结点数：n/2, n/4, n/8, 8, 4, 2
+  2. 原始链表大小为 n，每 3 个结点抽 1 个，每层索引的结点数：n/3, n/9, n/27, 9, 4, 2
+  3. 所以跳表的空间复杂度就是 **O(n)**
+
+跳表在工程中的应用：
+
+* Redis
+
+总结起来，跳表的就是 升维思想以及空间换时间。
+
+### 实战题目解析
 
 ## 4.栈、队列、优先队列、双端队列
 
@@ -140,12 +262,12 @@
 
 ## 参考
 
-* [[经验分享] 覃超算法训练营学习笔记](https://blog.csdn.net/mouliu6141/article/details/107050849)
-* [覃超-算法训练营 学习方法分享](http://t.zoukankan.com/Forgenvueory-p-13439624.html)
 * [算法训练营第4期 GitHub 使用指南](https://shimo.im/docs/9ty8pjk6ckxGrkQt/read)
 * [10月17号算法1-5班社群分享](https://shimo.im/docs/qhXjxtCyt8kgCkc6/read)
 * [作业提交仓库](https://github.com/algorithm004-04/algorithm004-04)
 * [DsaCamp-数据结构脑图](https://naotu.baidu.com/file/78d64abc80ed4bcf260ba723e3100b79)
 * [DsaCamp-算法脑图](https://naotu.baidu.com/file/620ab93db71a7fa99be5050a4ae48043)
+* [[经验分享] 覃超算法训练营学习笔记](https://blog.csdn.net/mouliu6141/article/details/107050849)
+* [覃超-算法训练营 学习方法分享](http://t.zoukankan.com/Forgenvueory-p-13439624.html)
 
 ## 总结
