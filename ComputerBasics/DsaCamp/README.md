@@ -123,7 +123,7 @@
   * Top tips for xx
 * 自顶向下的编程方式
   * [clean-code](https://markhneedham.com/blog/2008/09/15/clean-code-book-review/)
-  * [YesLeetCode 125.验证回文串](DsaCamp/src/cn/parulpan/code/chapter02/Solution125.java)
+  * [YesLeetCode 125.验证回文串](DsaCamp/src/cn/parzulpan/code/chapter02/Solution125.java)
 
 ### 时间空间复杂度
 
@@ -192,13 +192,13 @@
 
 链表是一种物理存储单元上非连续、非顺序的存储结构。链表由一序列的结点（链表中的每一个元素成为结点）组成。
 
-* 链表结点的数据结构 [LinkedListNode](DsaCamp/src/cn/parulpan/code/common/LinkedListNode.java)
+* 链表结点的数据结构 [LinkedListNode](DsaCamp/src/cn/parzulpan/code/common/LinkedListNode.java)
 
 **单链表**，是链表的一种，它有多个结点组成，每个结点都由一个数据域和一个指针组成，数据域用来存储数据，指针域用来指向其后结点。单链表的头结点的数据域不存储数据，指针域指向第一个真正存储数据的结点。
 
-* 单链表的实现 [SingleLinkedList](DsaCamp/src/cn/parulpan/code/common/SingleLinkedList.java)
-* [YesLeetCode 206.反转链表](DsaCamp/src/cn/parulpan/code/chapter03/Solution206.java)
-* [YesLeetCode 92.反转链表 II](DsaCamp/src/cn/parulpan/code/chapter03/Solution92.java)
+* 单链表的实现 [SingleLinkedList](DsaCamp/src/cn/parzulpan/code/common/SingleLinkedList.java)
+* [YesLeetCode 206.反转链表](DsaCamp/src/cn/parzulpan/code/chapter03/Solution206.java)
+* [YesLeetCode 92.反转链表 II](DsaCamp/src/cn/parzulpan/code/chapter03/Solution92.java)
 
 链表在工程中的应用：
 
