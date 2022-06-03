@@ -188,21 +188,39 @@
 
 #### 数组
 
+#### 数组在工程中的应用
+
 #### 链表
 
 链表是一种物理存储单元上非连续、非顺序的存储结构。链表由一序列的结点（链表中的每一个元素成为结点）组成。
 
-* 链表结点的数据结构 [LinkedListNode](DsaCamp/src/cn/parzulpan/code/common/LinkedListNode.java)
+**单向链表**，是链表的一种，它有多个结点组成，每个结点都由一个数据域和一个指针组成，数据域用来存储数据，指针域用来指向其后结点。单链表的头结点的数据域不存储数据，指针域指向第一个真正存储数据的结点。
 
-**单链表**，是链表的一种，它有多个结点组成，每个结点都由一个数据域和一个指针组成，数据域用来存储数据，指针域用来指向其后结点。单链表的头结点的数据域不存储数据，指针域指向第一个真正存储数据的结点。
+数据结构和算法：
 
-* 单链表的实现 [SingleLinkedList](DsaCamp/src/cn/parzulpan/code/common/SingleLinkedList.java)
+* 单向链表结点的数据结构 [SingleLinkedListNode](DsaCamp/src/cn/parzulpan/code/common/SingleLinkedListNode.java)
+* 单向链表的算法实现 [SingleLinkedList](DsaCamp/src/cn/parzulpan/code/common/SingleLinkedList.java)
+
+**双向链表**，有两个指针，一个指向前一个节点，一个后一个节点。它的优点是可以找到前驱和后继，可进可退；它的缺点是 增加/删除 节点复杂，因为需要多分配一个指针存储空间。它适用于需要双向查找节点值的情况。
+
+数据结构和算法：
+
+* 双向链表结点的数据结构 [DoubleLinkedListNode](DsaCamp/src/cn/parzulpan/code/common/DoubleLinkedListNode.java)
+* 双向链表的算法实现 [DoubleLinkedList](DsaCamp/src/cn/parzulpan/code/common/DoubleLinkedList.java)
+
+#### 链表在工程中的应用
+
+**单向链表**：
+
 * [YesLeetCode 206.反转链表](DsaCamp/src/cn/parzulpan/code/chapter03/Solution206.java)
 * [YesLeetCode 92.反转链表 II](DsaCamp/src/cn/parzulpan/code/chapter03/Solution92.java)
 
-链表在工程中的应用：
+**双向链表**：
 
-* LRU Cache
+* [YesLeetCode 146.LRU 缓存](DsaCamp/src/cn/parzulpan/code/chapter03/Solution146.java)
+* [YesLeetCode 460.LFU 缓存](DsaCamp/src/cn/parzulpan/code/chapter03/Solution146.java)
+* [YesLeetCode 1472.设计浏览器历史记录](DsaCamp/src/cn/parzulpan/code/chapter03/Solution1472.java)
+* [YesLeetCode 432.全 O(1) 的数据结构](DsaCamp/src/cn/parzulpan/code/chapter03/Solution432.java)
 
 #### 跳表
 
@@ -218,11 +236,16 @@ log2(n)-1**
   2. 原始链表大小为 n，每 3 个结点抽 1 个，每层索引的结点数：n/3, n/9, n/27, 9, 4, 2
   3. 所以跳表的空间复杂度就是 **O(n)**
 
-跳表在工程中的应用：
+总结起来，跳表的就是 升维思想以及空间换时间。
+
+数据结构和算法：
+
+* 跳表的数据结构
+* 跳表的算法实现
+
+#### 跳表在工程中的应用
 
 * Redis
-
-总结起来，跳表的就是 升维思想以及空间换时间。
 
 ### 实战题目解析
 

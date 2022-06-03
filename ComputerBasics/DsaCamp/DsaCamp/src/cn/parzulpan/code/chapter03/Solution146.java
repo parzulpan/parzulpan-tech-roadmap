@@ -1,10 +1,11 @@
 package cn.parzulpan.code.chapter03;
 
 /**
- * 92.反转链表 II
+ * 146.LRU 缓存
  *
  * @author parzulpan
- * @since 2022/5/4
+ * @since 2022/5/5
  */
-public class Solution92 {
+public class Solution146 {
+
 }

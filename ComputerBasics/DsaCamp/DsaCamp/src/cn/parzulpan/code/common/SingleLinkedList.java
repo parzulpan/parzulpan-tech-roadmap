@@ -3,7 +3,7 @@ package cn.parzulpan.code.common;
 import java.util.Iterator;
 
 /**
- * 单链表的实现
+ * 单向链表的算法实现
  *
  * @author parzulpan
  * @since 2022/5/4
@@ -12,22 +12,79 @@ public class SingleLinkedList<T> implements Iterable<T> {
     /**
      * 头结点
      */
-    private LinkedListNode<T> head;
+    private SingleLinkedListNode<T> head;
     /**
      * 结点个数
      */
     private int size;
 
     public SingleLinkedList() {
-        this.head = new LinkedListNode<T>(null, null);
+        this.head = new SingleLinkedListNode<T>(null, null);
         size = 0;
     }
 
     /**
+     * 任意位置插入
+     */
+    public void add(int index, T value) {
+        indexOutOfBoundsException(index);
+
+        SingleLinkedListNode<T> cur = head;
+        for (int i = 0; i < index; i++) {
+            cur = cur.getNext();
+        }
+
+        SingleLinkedListNode<T> newNode = new SingleLinkedListNode<>(cur.getNext(), value);
+        cur.setNext(newNode);
+        size++;
+    }
+
+    /**
+     * 头插法
+     */
+    public void addFirst(T value) {
+        add(0, value);
+    }
+
+    /**
+     * 尾插法
+     */
+    public void addLast(T value) {
+        add(size, value);
+    }
+
+    /**
+     * 任意位置查询
+     */
+    public T get(int index) {
+        indexOutOfBoundsException(index);
+
+        SingleLinkedListNode<T> cur = head.getNext();
+        for (int i = 0; i < index; i++) {
+            cur = cur.getNext();
+        }
+
+        return cur.getValue();
+    }
+
+    /**
+     * 查询第一个
+     */
+    public T getFirst() {
+        return get(0);
+    }
+
+    /**
+     * 查询最后一个
+     */
+    public T getLast() {
+        return get(size - 1);
+    }
+    /**
      *
      */
     public void clear() {
-        this.head = new LinkedListNode<T>(null, null);
+        this.head = new SingleLinkedListNode<T>(null, null);
         size = 0;
     }
 
@@ -45,33 +102,7 @@ public class SingleLinkedList<T> implements Iterable<T> {
         return this.size == 0;
     }
 
-    /**
-     *
-     */
-    public T get(int index) {
-        indexOutOfBoundsException(index);
 
-        LinkedListNode<T> cur = head.getNext();
-        for (int i = 0; i < index; i++) {
-            cur = cur.getNext();
-        }
-
-        return cur.getValue();
-    }
-
-    /**
-     *
-     */
-    public T getFirst() {
-        return get(0);
-    }
-
-    /**
-     *
-     */
-    public T getLast() {
-        return get(size - 1);
-    }
 
     /**
      *
@@ -79,7 +110,7 @@ public class SingleLinkedList<T> implements Iterable<T> {
     public void set(int index, T value) {
         indexOutOfBoundsException(index);
 
-        LinkedListNode<T> cur = head.getNext();
+        SingleLinkedListNode<T> cur = head.getNext();
         for (int i = 0; i < index; i++) {
             cur = cur.getNext();
         }
@@ -101,35 +132,6 @@ public class SingleLinkedList<T> implements Iterable<T> {
         set(size - 1, value);
     }
 
-    /**
-     *
-     */
-    public void add(int index, T value) {
-        indexOutOfBoundsException(index);
-
-        LinkedListNode<T> cur = head;
-        for (int i = 0; i < index; i++) {
-            cur = cur.getNext();
-        }
-
-        LinkedListNode<T> newNode = new LinkedListNode<>(cur.getNext(), value);
-        cur.setNext(newNode);
-        size++;
-    }
-
-    /**
-     *
-     */
-    public void addFirst(T value) {
-        add(0, value);
-    }
-
-    /**
-     *
-     */
-    public void addLast(T value) {
-        add(size, value);
-    }
 
     /**
      *
@@ -137,12 +139,12 @@ public class SingleLinkedList<T> implements Iterable<T> {
     public T remove(int index) {
         indexOutOfBoundsException(index);
 
-        LinkedListNode<T> cur = head;
+        SingleLinkedListNode<T> cur = head;
         for (int i = 0; i < index; i++) {
             cur = cur.getNext();
         }
 
-        LinkedListNode<T> retNode = cur.getNext();
+        SingleLinkedListNode<T> retNode = cur.getNext();
         cur.setNext(retNode.getNext());
         retNode.setNext(null);
         size--;
@@ -167,7 +169,7 @@ public class SingleLinkedList<T> implements Iterable<T> {
     @Override
     public Iterator<T> iterator() {
         return new Iterator<T>() {
-            LinkedListNode<T> cur = head;
+            SingleLinkedListNode<T> cur = head;
 
             @Override
             public boolean hasNext() {
