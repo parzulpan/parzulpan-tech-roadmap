@@ -19,5 +19,6 @@ public class Solution648 {
 
     public String replaceWords(List<String> dictionary, String sentence) {
 
+        return "";
     }
 }
